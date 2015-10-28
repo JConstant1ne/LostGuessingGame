@@ -2,11 +2,66 @@
 <head> 
 	<title>You find yourself...In a Blizzard...</title>
 </head>
+<style>
+body {
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+}
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+body {
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+h1	{color:black;text-shadow: 2px 2px #add8e6;text-align: center;}
+h2	{color:black;text-shadow: 2px 2px #add8e6;text-align: center;}
+h2	{color:black;text-shadow: 2px 2px #add8e6;text-align: center;}
+div {text-align: center}
+</style>
 <body>
+	<div id="snow">
+	</div>
 	<h1>You find yourself lost in a blizzard....</h1>
 	<h2>You need to find your car... Which just so happens...is next to a cliff...</h1>
 	<h2>Enter the number of steps you want to take, to arrive at your car...Without falling over the edge of the cliff (The Temperture is Dropping, and you can't survive long without shelter!)</h2>
+	<h2>Press Button to Start</h2>
+	<div><button onclick="Start()">Start</button></div>
 <script "Blizzard!">
+function Start() {
 	var goal = 97
 	
 	var guess = prompt("How Many Steps do you want to Take? ( You didn't take more than 100 steps away from your car... But you don't know exactly how many...The Temperture is dropping..)")
@@ -59,7 +114,7 @@
 		if (guess4 < goal4) {
 			prompt("The Temperture has dropped to -20 F... You have frozen to Death")
 	endOfGame()}
-	
+	}
 </script>	
 
 </body>
