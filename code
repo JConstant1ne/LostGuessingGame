@@ -1,52 +1,65 @@
 <!DOCTYPE HTML>
 <head> 
-	<title>In a Blizzard...</title>
+	<title>You find yourself...In a Blizzard...</title>
 </head>
 <body>
 	<h1>You find yourself lost in a blizzard....</h1>
 	<h2>You need to find your car... Which just so happens...is next to a cliff...</h1>
 	<h2>Enter the number of steps you want to take, to arrive at your car...Without falling over the edge of the cliff (The Temperture is Dropping, and you can't survive long without shelter!)</h2>
-	<script "Blizzard!">
+<script "Blizzard!">
 	var goal = 97
+	
 	var guess = prompt("How Many Steps do you want to Take? ( You didn't take more than 100 steps away from your car... But you don't know exactly how many...The Temperture is dropping..)")
+	
 	if (guess == goal) {
-		prompt("Congrats!! You made it to your !!")
-	};
-		if (guess > goal) {
+		prompt("Congrats!! You made it to your car !!")
+	endOfGame()};
+		
+		if (guess > goal ){
 			prompt("Oh No! You fell to your death!!")
-		}
+ 	endOfGame()};
+		
 		if (guess < goal) { 
 			var goal2 = (goal - guess) 
 			var guess2 = prompt("Your still lost in the Blizzard,The Temperture is 20 F. How many more Steps do you wish to take ?")
 			};
+		
+		if (guess2 > goal2 ){
+			prompt("Oh No! You fell to your death!!")
+ 	endOfGame()};
+		
 		if (guess2 == goal2) {
 			prompt("Congrats!! You made it to your car !!")
-		}
-		if (guess2 > goal2) {
-			prompt("Oh No! You fell to your Death!!")
-		}
+	endOfGame()} 
+		
 		if (guess2 < goal2) {
 			var goal3 = (goal2 - guess2)
 			var guess3 = prompt("Your still lost in the Blizzard, The Temperture is 0 F.How many more Steps do you wish to take ?")
 		};
+		if (guess3 > goal3 ){
+			prompt("Oh No! You fell to your death!!")
+ 	endOfGame()};
 		if (guess3 == goal3) {
 			prompt("Congrats!! You made it to your car !!")
-		}
-		if (guess3 > goal3) {
-			prompt("Oh No! You fell to your Death!!")
-		}
+	endOfGame()}
+		
 		if (guess3 < goal3) {
 			var goal4 = (goal2 - guess3)
 			var guess4 = prompt("Your still lost in the Blizzard, The Temperture is -10 F,How many more Steps do you wish to take ?")
 		};
+		
+		if (guess4 > goal4 ){
+			prompt("Oh No! You fell to your death!!")
+ 	endOfGame()};
+		
 		if (guess4 == goal4) {
 			prompt("Congrats!! You made it to your car !!")
-		}
-		if (guess4 > goal4) {
-			prompt("Oh No! You Fell to your Death!!")
-		}
+	endOfGame()}
+		
 		if (guess4 < goal4) {
 			prompt("The Temperture has dropped to -20 F... You have frozen to Death")
-		}
-	</script>	
+	endOfGame()}
+	
+</script>	
+
 </body>
