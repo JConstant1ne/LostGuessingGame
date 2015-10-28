@@ -11,7 +11,7 @@ body {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
     50% { background-color: #b4cfe0 }
     100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-position: 600px 1001px, 420px 420px, 300px 300px;
         background-color: #6b92b9;
     }
 }
@@ -19,7 +19,7 @@ body {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
     50% { background-color: #b4cfe0 }
     100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-position: 600px 1001px, 420px 420px, 300px 300px;
         background-color: #6b92b9;
     }
 }
@@ -27,7 +27,7 @@ body {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
     50% { background-color: #b4cfe0 }
     100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-position: 600px 1001px, 420px 420px, 300px 300px;
         background-color: #6b92b9;
     }
 }
@@ -35,7 +35,7 @@ body {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
     50% { background-color: #b4cfe0 }
     100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-position:  600px 1001px, 420px 420px, 300px 300px;
         background-color: #6b92b9;
     }
 }
